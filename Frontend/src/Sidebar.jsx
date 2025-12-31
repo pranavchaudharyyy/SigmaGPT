@@ -4,7 +4,7 @@ import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import {v1 as uuidv1} from "uuid";
 
-const API_BASE = import.meta.env.VITE_BACKEND_URL;
+const API_BASE = import.meta.env.VITE_BACKEND_URI;
 
 
 function Sidebar() {
