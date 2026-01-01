@@ -1,5 +1,5 @@
 import "./ChatWindow.css";
-import Chat from "./Chat.jsx";
+import Chat from "./chat";
 import { MyContext } from "./MyContext.jsx";
 import { useContext, useState, useEffect } from "react";
 import {ScaleLoader} from "react-spinners";
@@ -26,7 +26,11 @@ function ChatWindow() {
         };
 
         try {
-            const response = await fetch("http://localhost:8080/api/chat", options);
+            const response = await fetch(
+  `${import.meta.env.VITE_BACKEND_URI}/api/chat`,
+  options
+);
+
             const res = await response.json();
             console.log(res);
             setReply(res.reply);
