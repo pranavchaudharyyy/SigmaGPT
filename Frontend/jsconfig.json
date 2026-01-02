@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "checkJs": false,
+    "moduleResolution": "node",
+    "baseUrl": "./src"
+  },
+  "include": ["src"]
+}
